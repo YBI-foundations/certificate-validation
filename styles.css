@@ -13,40 +13,79 @@ body {
     height: 74px;
     display: flex;
     align-items: center; /* Center items vertically */
-    padding: 0 20px; /* Add some horizontal padding */
+    padding: 0 20px; /* Add horizontal padding */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .image {
-    margin-left: 10px; /* Adjust margin for smaller screens */
-    height: 60px;
-    width: 60px;
-    justify-items: center;
-    align-items: center;
-    margin-top: 6px;
+    height: 50px; /* Set a fixed height for the logo */
+    margin-right: 20px; /* Space between logo and input */
+}
+
+.input-container {
+    display: flex;
+    flex: 1; /* Allow the input container to grow */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width for the container */
 }
 
 .input {
-    padding: 5px 12px;
-    line-height: 22px;
+    padding: 10px; /* Increase padding for better touch target */
     font-size: 14px;
-    min-width: 250px;
+    flex: 1; /* Allow input to grow and fill available space */
     border: 1px solid #737D87;
     border-radius: 20px 0 0 20px;
-    border-right: none;
     outline: none;
-    margin-top: 19px;
+     /* Space between input and button */
+    min-width: 0; /* Prevent minimum width issues */
 }
 
 .button {
-    padding: 6px 14px;
-    line-height: 20px;
+    padding: 10px 14px; /* Increase padding for better touch target */
     font-size: 15px;
-    min-width: 120px;
     border: 1px solid #FA7B00;
     background-color: #FA7B00;
     color: #ffffff;
-    border-radius: 0 20px 20px 0;
-    margin-top: 19px;
+    border-radius: 0 20px 20px 0; /* Rounded button */
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .input {
+        min-width: 150px;
+        border-radius: 20px 20px 20px 20px; /* Reduce minimum width on smaller screens */
+    }
+
+    .button {
+        min-width: 80px;
+        border-radius: 20px 20px 20px 20px; /* Adjust button width */
+    }
+}
+
+@media (max-width: 480px) {
+    .Navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .input-container {
+        width: 100%; /* Full width for input container */
+        margin-top: 10px;
+        border-radius: 0 20px 20px 0; /* Space above input container */
+    }
+
+    .input {
+        width: 100%; /* Full width for input on small screens */
+        margin-right: 0; /* No right margin */
+        border-radius: ; /* Rounded corners */
+    }
+
+    .button {
+        width: 100%; /* Full width for button on small screens */
+        margin-top: 10px; /* Space above button */
+    }
 }
 
 .main {

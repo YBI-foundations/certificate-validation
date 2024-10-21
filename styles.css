@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Add box-sizing for better control of elements */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Set a default font for the body */
+}
+
+.Navbar {
+    background-color: white;
+    height: 74px;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 0 20px; /* Add some horizontal padding */
+}
+
+.image {
+    margin-left: 10px; /* Adjust margin for smaller screens */
+    height: 60px;
+    width: 60px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.input {
+    padding: 5px 12px;
+    line-height: 22px;
+    font-size: 14px;
+    min-width: 250px;
+    border: 1px solid #737D87;
+    border-radius: 20px 0 0 20px;
+    border-right: none;
+    outline: none;
+    margin-top: 19px;
+}
+
+.button {
+    padding: 6px 14px;
+    line-height: 20px;
+    font-size: 15px;
+    min-width: 120px;
+    border: 1px solid #FA7B00;
+    background-color: #FA7B00;
+    color: #ffffff;
+    border-radius: 0 20px 20px 0;
+    margin-top: 19px;
+}
+
+.main {
+    margin: 10px;
+    background: linear-gradient(180deg, rgba(231, 235, 238, 0.8) 15%, rgba(46, 65, 86) 100%);
+    width: 100%;
+    padding: 20px; /* Add padding for content */
+}
+
+.image2 {
+    height: auto; /* Make the height responsive */
+    width: 100%; /* Make width responsive */
+    max-width: 800px; /* Set a maximum width */
+    margin: 20px auto; /* Center it */
+    border: none;
+    border-radius: 16px;
+}
+
+.heading {
+    padding-top: 30px;
+    margin-bottom: 20px;
+    text-align: center; /* Center align the heading */
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.middle {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-between; /* Space items evenly */
+}
+
+.cart {
+    margin: 10px;
+    background-color: #ffffff;
+    flex: 1 1 300px; /* Allow flexible width */
+    max-width: 400px; /* Set a maximum width */
+    padding: 15px; /* Add some padding */
+}
+
+.ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.li {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container {
+    border-radius: 5px;
+}
+
+.chart {
+    margin: 20px auto; /* Center it */
+    background-color: #ffffff;
+    width: 100%; /* Make width responsive */
+    max-width: 400px; /* Set a maximum width */
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.size {
+    margin-left: 40px;
+    font-weight: 400;
+    font-size: 16px; /* Add 'px' for font size */
+}
+
+.divider {
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+.info-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copy-btn {
+    background-color: #FA7B00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .Navbar {
+        flex-direction: column; /* Stack items vertically on small screens */
+        height: auto; /* Allow height to adjust */
+    }
+    
+    .input, .button {
+        width: 100%; /* Full width for inputs/buttons */
+        margin-top: 10px; /* Space between elements */
+    }
+
+    .middle {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+
+    .image2 {
+        width: 90%; /* Use more of the screen width */
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 20px; /* Smaller font size for very small screens */
+    }
+
+    .li {
+        font-size: 14px; /* Smaller list item font */
+    }
+}

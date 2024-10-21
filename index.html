@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="Navbar">
+        <img
+        class="image"
+        src="https://www.ybifoundation.org/orglogo?date=1729457132505"
+      />
+      <span>
+        <input
+          class="input"
+          placeholder="Enter the Certificate id"
+          type="text"
+        />
+      </span>
+      <span>
+        <button class="button">verify</button>
+      </span>
+    </div>
+    <div class="main">
+      <div class="heading">This certificate was issued to Munendra singh</div>
+      <div class="middle">
+        <span>
+          <img class="image2" src="2.jpg" alt="" />
+        </span>
+        <span class="chart">
+          <div class="container">
+            <ul class="ul">
+              <li class="li">
+                <label>Name:</label>
+                <span class="size" id="student-name">Munendra singh</span>
+              </li>
+              <li class="li">
+                <label>Issued By:</label>
+                <span class="size" id="org-name">YBI Foundation</span>
+              </li>
+              <li class="li">
+                <label>Document:</label>
+                <span class="size" id="course-name"
+                  >Web Development - 30 days</span
+                >
+              </li>
+              <li class="li">
+                <label>Credential Id:</label>
+                <span class="size" id="certificate-credential-id"
+                  >LZ5CIV8TC8KAQ</span
+                >
+              </li>
+              <li class="li">
+                <label>Date of Printing:</label>
+                <span class="size" id="certificate-issued-date"
+                  >Saturday, Octubar 09 2024</span
+                >
+              </li>
+            </ul>
+            <div class="divider"></div>
+            <div class="info-footer">
+              <p>This certificate has been issued by YBI</p>
+              
+            </div>
+           
+              <button
+                class="copy-btn"
+                onclick="copyCertificateValidationLink()"
+              >
+                Copy link
+              </button>
+          </div>
+        </span>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Powered By YBI Foundation</p>
+    </div>
+  </body>
+</html>
